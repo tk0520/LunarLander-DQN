@@ -1,0 +1,28 @@
+# Gymnasium
+RENDER_MODE = "rgb_array"
+
+# Train Params
+EPISODES = 100000
+
+# Record Params
+STAT_INTERVAL = 50
+VIDEO_RECORD_INTERVAL = 50
+
+# Agent Params
+INITIAL_MEMORY = 10000
+MAX_MEMORY = 1000000 
+SYNC_INTERVAL = 10000  
+
+# Action-Value Params
+DISCOUNT = 0.99
+
+# Optimizer Params 
+LEARNING_RATE = 0.00005
+MAX_GRAD_NORM = 0.5
+BATCH_SIZE = 256
+
+# Exploration Params 
+EPSILON_START = 1.0 
+EPSILON_END = 0.05
+EPSILON_DECAY = 0.9999
+EPSILON_DECAY_STEPS = 1500000
